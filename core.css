@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  color: #f3f3f3;
+  margin: 0;
+}
+
+#title {
+  font-size: clamp(100%, 1.5rem + 2vw, 2.5rem);
+  text-align: center;
+  margin: 45px 0px 15px 0px;
+}
+
+#description {
+  font-size: clamp(100%, 0.5rem + 2vw, 1.125rem);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.clue {
+  font-size: clamp(75%, 0.125rem + 2vw, 0.875rem);
+  color: #e4e4e4;
+}
+
+#survey-form {
+  font-size: clamp(100%, 0.5rem + 2vw, 1.125rem);
+  width: 100%;
+  padding: 40px;
+  margin: 0;
+  border-radius: 15px;
+  background-color: rgba(27, 27, 50, 0.8);
+}
+
+#survey-form label {
+  width: 100%;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+#survey-form input,
+select,
+textarea,
+fieldset {
+  width: 100%;
+  margin-bottom: 20px;
+  display: inline-block;
+  resize: vertical;
+}
+
+#survey-form fieldset label {
+  width: 90%;
+  display: inline-block;
+}
+
+#survey-form fieldset input {
+  width: 5%;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#submit {
+  color: #e4e4e4;
+  font-size: clamp(100%, 0.5rem + 2vw, 1.125rem);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  background-color: #37af65;
+}
+
+@media only screen and (min-width: 800px) {
+  #survey-form {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #survey-form {
+    width: 800px;
+  }
+}
